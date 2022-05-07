@@ -1,0 +1,9 @@
+services:
+  redis:
+    container_name: redis-6.2
+    hostname: redis
+    image: redis:6.2-alpine
+    ports:
+      - '6379:6379'
+    restart: unless-stopped
+
